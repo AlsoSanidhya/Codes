@@ -48,4 +48,10 @@ void addMatrices(int rows, int cols) {
         }
         printf("\n");
     }
+}
+int main() {
+    int rows, cols;
+    scanf("%d %d", &rows, &cols);
+    addMatrices(rows, cols);
+    return 0;
 }   
