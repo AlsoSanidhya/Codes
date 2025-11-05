@@ -65,3 +65,15 @@ void multiplyMatrices(int rowsA, int colsA, int rowsB, int colsB)
         printf("\n");
     }
 }
+int main() {
+    int rowsA, colsA, rowsB, colsB;
+
+    // Read dimensions of matrix A
+    scanf("%d %d", &rowsA, &colsA);
+    // Read dimensions of matrix B
+    scanf("%d %d", &rowsB, &colsB);
+
+    multiplyMatrices(rowsA, colsA, rowsB, colsB);
+
+    return 0;
+}
