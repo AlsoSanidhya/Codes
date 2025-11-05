@@ -39,3 +39,9 @@ void transposeMatrix(int rows, int cols) {
         printf("\n");
     }
 }
+int main() {
+    int rows, cols;
+    scanf("%d %d", &rows, &cols);
+    transposeMatrix(rows, cols);
+    return 0;
+}
