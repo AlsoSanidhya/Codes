@@ -24,3 +24,27 @@ int factorial(int n) {
     }
     return fact;
 }
+int main() {
+    int number, originalNumber, sumOfFactorials = 0;
+
+    // Input number
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    originalNumber = number;
+
+    // Calculate sum of factorials of each digit
+    while (number > 0) {
+        int digit = number % 10;
+        sumOfFactorials += factorial(digit);
+        number /= 10;
+    }
+
+    // Check if the number is a strong number
+    if (sumOfFactorials == originalNumber) {
+        printf("Strong number\n");
+    } else {
+        printf("Not strong number\n");
+    }
+
+    return 0;
+}
