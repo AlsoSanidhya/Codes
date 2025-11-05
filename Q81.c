@@ -20,4 +20,4 @@ int countCharacters(const char *str) {
         count++;
     }
     return count;
-}   
+}
