@@ -25,3 +25,21 @@ int isPrime(int num) {
     }
     return 1; // Prime
 }
+int main() {
+    int n;
+
+    // Input upper limit
+    printf("Enter an integer n: ");
+    scanf("%d", &n);
+
+    // Print all prime numbers from 1 to n
+    printf("Prime numbers from 1 to %d are:\n", n);
+    for (int i = 2; i <= n; i++) {
+        if (isPrime(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
