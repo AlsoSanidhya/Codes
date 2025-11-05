@@ -1,16 +1,18 @@
-//Q73: Find the sum of each row of a matrix and store it in an array.
+// Q73: Find the sum of each row of a matrix and store it in an array.
 
 /*
 Sample Test Cases:
-Input 1:
+Input:
 2 3
 1 2 3
 4 5 6
-Output 1:
-6 15
 
+Output:
+6 15
 */
+
 #include <stdio.h>
+
 void sumOfEachRow(int rows, int cols, int rowSums[]) {
     int matrix[rows][cols];
 
@@ -23,9 +25,28 @@ void sumOfEachRow(int rows, int cols, int rowSums[]) {
 
     // Calculate the sum of each row
     for (int i = 0; i < rows; i++) {
-        rowSums[i] = 0; // Initialize sum for the current row
+        rowSums[i] = 0;  // Initialize sum for the current row
         for (int j = 0; j < cols; j++) {
             rowSums[i] += matrix[i][j];
         }
     }
+}
+
+int main() {
+    int rows, cols;
+    scanf("%d %d", &rows, &cols);
+
+    int rowSums[rows];
+
+    // Function call
+    sumOfEachRow(rows, cols, rowSums);
+
+    // Print the row sums
+    for (int i = 0; i < rows; i++) {
+        printf("%d", rowSums[i]);
+        if (i != rows - 1)
+            printf(" "); // Print space between sums
+    }
+
+    return 0;
 }
