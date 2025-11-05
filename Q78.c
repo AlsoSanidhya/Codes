@@ -33,4 +33,17 @@ int sumMainDiagonal(int rows, int cols) {
     }
 
     return sum;
+}
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int result = sumMainDiagonal(n, n);
+    if (result == -1) {
+        printf("Not a square matrix\n");
+    } else {
+        printf("%d", result);
+    }
+
+    return 0;
 }   
