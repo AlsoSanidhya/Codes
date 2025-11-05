@@ -44,3 +44,16 @@ bool isSymmetric(int rows, int cols) {
 
     return true;
 }
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    bool result = isSymmetric(n, n);
+    if (result) {
+        printf("True\n");
+    } else {
+        printf("False\n");
+    }
+
+    return 0;
+}
