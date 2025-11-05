@@ -21,3 +21,10 @@ int countCharacters(const char *str) {
     }
     return count;
 }
+int main() {
+    char str[100];
+    scanf("%s", str);
+    int length = countCharacters(str);
+    printf("%d\n", length);
+    return 0;
+}  
