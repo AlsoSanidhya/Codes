@@ -25,3 +25,10 @@ int sumOfMatrixElements(int rows, int cols) {
 
     return sum;
 }
+int main() {
+    int rows, cols;
+    scanf("%d %d", &rows, &cols);
+    int totalSum = sumOfMatrixElements(rows, cols);
+    printf("%d\n", totalSum);
+    return 0;
+}
